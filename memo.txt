@@ -1,0 +1,4 @@
+1. 서버 실행
+터미널 창에서 node server.js하게되면
+server.js가 실행되고 서버가 열림
+2. 크롬에서 http://localhost:3000/ 접속
