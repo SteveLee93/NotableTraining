@@ -9,15 +9,29 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = '/protocol_setting.html';
         });
     }
-    
+
     // ----------- protocol setting page ---------------
     // Labware 데이터를 나타내는 배열
+    var btn_back = document.getElementById('btn_back');
+    if (btn_back) {
+        btn_back.addEventListener('click', function() {
+            // 페이지를 new-protocol.html로 리디렉션 합니다.
+            window.location.href = '/mainpage.html';
+        });
+    }
+    var btn_next = document.getElementById('btn_next');
+    if (btn_next) {
+        btn_next.addEventListener('click', function() {
+            // 페이지를 new-protocol.html로 리디렉션 합니다.
+            // window.location.href = '/mainpage.html';
+        });
+    }
     var labwares = [
-        { id: 1, name: 'Beaker' },
-        { id: 2, name: 'Flask' },
+        { id: 1, name: '96 Well Plate' },
+        { id: 2, name: '1000ul Tip Rack' },
         // 기타 Labware 아이템들
     ];
-    
+
     // Labware를 HTML에 추가하는 함수
     function updateLabwareList(labwares) {
         var labwareList = document.querySelector('.labware-list');
@@ -35,6 +49,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+
+
     // 페이지 로드 시 Labware 목록 업데이트
     updateLabwareList(labwares);
 });
+
+

@@ -59,8 +59,22 @@ body {
     padding-left: 100px;
     padding-right: 100px;
     text-align: center;
+    position: relative; /* 포지셔닝 컨텍스트 설정 */
 }
-
+  
+  .overlay-button {
+    position: absolute; /* Grid 아이템에 대해 절대적 위치 지정 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 버튼을 Grid 아이템의 정중앙으로 이동 */
+    display: none; /* 기본 상태에서는 버튼 숨김 */
+    height: 100px;
+    width: 120px;
+  }
+  
+  .grid-item:hover .overlay-button {
+    display: block; /* 마우스 오버 시 버튼 표시 */
+  }
 
 .pipette{
     display: grid;
@@ -107,3 +121,34 @@ body {
 }
 
 
+.btn {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 30px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.7); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; 
+  }
+
+  .grid-item:hover .overlay {
+    opacity: 1;
+    pointer-events: auto;  
+  }
+  */
