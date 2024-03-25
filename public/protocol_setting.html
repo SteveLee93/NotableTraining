@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Protocol</title>
+    <link rel="stylesheet" href="protocol_setting.css">
+</head>
+<body>
+    <div class="logo">ABLE Labs</div>
+    <div class="navbar">
+        <!-- 상단의 Preparation, Step, Run, Report 단계를 나타내는 네비게이션 바 -->
+        <button class="nav-button active">Preparation</button>
+        <button class="nav-button">Step</button>
+        <button class="nav-button">Run</button>
+        <button class="nav-button">Report</button>
+    </div>
+
+    <div class="main-content">
+        <div class="labware-list">
+            <div class="labware-title">Labware</div>
+            <!-- 여기에 Labware 리스트를 표시 -->
+        </div>
+        
+        <div class="protocol-name-container">
+        </div>
+        <div class="grid-container">
+            <span class="protocol-name">Protocol Name: No name</span>
+            <!-- 1부터 11까지의 Grid -->
+            <div class="grid-item">10</div>
+            <div class="grid-item">11</div>
+            <div class="grid-item">Trash</div>
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">9</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+        </div>
+
+        <div class="pipette-settings">
+            <!-- Pipette 설정 영역 -->
+            <div class="pipette">
+                <img src="left-pipette.png" alt="Left Pipette">
+                <img src="right-pipette.png" alt="Right Pipette">
+            </div>
+            <div class="pipette">
+                <select class="pipette-type">
+                    <option value="none">None</option>
+                    <!-- 다른 옵션들 추가 -->
+                </select>
+                <select class="pipette-type">
+                    <option value="none">None</option>
+                    <!-- 다른 옵션들 추가 -->
+                </select>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

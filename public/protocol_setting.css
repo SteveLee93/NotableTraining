@@ -1,0 +1,109 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo {
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+}
+
+.nav-button {
+    margin: 0 5px;
+    padding: 10px;
+    border: none;
+    background-color: #e7e7e7;
+    cursor: pointer;
+}
+
+.nav-button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.protocol-name-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.protocol-name {
+    font-size: 20px;
+    font-weight: bold;
+    grid-column: 1 / span 3;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: #e7e7e7;
+    padding: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+}
+
+
+.pipette{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.pipette img {
+    width: 100px; /* 이미지 크기 조정 필요 */
+}
+
+.pipette-type {
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.labware-list {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.labware-item {
+    background-color: #ffffff;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.labware-item:hover {
+    background-color: #e7e7e7;
+}
+
+.labware-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+

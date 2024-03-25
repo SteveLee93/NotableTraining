@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.sidebar {
+    background-color: #007bff;
+    padding: 20px;
+    width: 250px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.version {
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: block;
+    background-color: #ffffff;
+    color: #007bff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #e6e6e6;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+.top-bar {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.icon {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Additional styles for icons/buttons would go here */
+
+.content {
+    padding: 20px;
+}
+
+/* Additional responsive or specific styles */
