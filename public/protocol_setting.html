@@ -27,18 +27,18 @@
         <div class="grid-container">
             <span class="protocol-name">Protocol Name: No name</span>
             <!-- 1부터 11까지의 Grid -->
-            <div class="grid-item">10<button class="overlay-button">Add Labware</button></div>
-            <div class="grid-item">11<button class="overlay-button">Add Labware</button></div>
+            <div class="grid-item" data-number="10">10<img src="your-image-source.png" alt="Add Labware" class="add-labware-image"></div>
+            <div class="grid-item" data-number="11">11<img src="your-image-source.png" alt="Add Labware" class="add-labware-image"></div>
             <div class="grid-item">Trash</div>
-            <div class="grid-item">7<button class="overlay-button">Add Labware</button></div>
-            <div class="grid-item">8<button class="overlay-button">Add Labware</button></div>
-            <div class="grid-item">9<button class="overlay-button">Add Labware</button></div>
-            <div class="grid-item">4<button class="overlay-button">Add Labware</button></div>
-            <div class="grid-item">5<button class="overlay-button">Add Labware</button></div>
-            <div class="grid-item">6<button class="overlay-button">Add Labware</button></div>
-            <div class="grid-item">1<button class="overlay-button">Add Labware</button></div>
-            <div class="grid-item">2<button class="overlay-button">Add Labware</button></div>
-            <div class="grid-item">3<button class="overlay-button">Add Labware</button></div>
+            <div class="grid-item" data-number="7">7<img src="your-image-source.png" alt="Add Labware" class="add-labware-image"></div>
+            <div class="grid-item" data-number="8">8<img src="your-image-source.png" alt="Add Labware" class="add-labware-image"></div>
+            <div class="grid-item" data-number="9">9<img src="your-image-source.png" alt="Add Labware" class="add-labware-image"></div>
+            <div class="grid-item" data-number="4">4<img src="your-image-source.png" alt="Add Labware" class="add-labware-image"></div>
+            <div class="grid-item" data-number="5">5<img src="your-image-source.png" alt="Add Labware" class="add-labware-image"></div>
+            <div class="grid-item" data-number="6">6<img src="your-image-source.png" alt="Add Labware" class="add-labware-image"></div>
+            <div class="grid-item" data-number="1">1<img src="your-image-source.png" alt="Add Labware" class="add-labware-image"></div>
+            <div class="grid-item" data-number="2">2<img src="your-image-source.png" alt="Add Labware" class="add-labware-image"></div>
+            <div class="grid-item" data-number="3">3<img src="your-image-source.png" alt="Add Labware" class="add-labware-image"></div>
         </div>
 
         <div class="pipette-settings">
@@ -75,7 +75,37 @@
     <button class="btn", id="btn_back"> BACK </button>
     <button class="btn", id="btn_next"> NEXT </button>
     
-
     <script src="script.js"></script>
 </body>
+
+<div class="overlay", id="overlay">
+    <div class="overlay-content">
+      <form id="labware-form">
+        <label for="type">Type</label>
+        <select id="type" name="type">
+          <option value="tiprack">Tip Rack</option>
+          <option value="wellplate">Well Plate</option>
+          <option value="reservoir">Reservoir</option>
+          <option value="tuberack">Tube Rack</option>
+        </select>
+  
+        <label for="model">Model</label>
+        <select id="model" name="model">
+          <option value="model1">Model 1</option>
+          <!-- 추가 모델 옵션 -->
+        </select>
+  
+        <label for="nickname">Nickname</label>
+        <input type="text" id="nickname" name="nickname" placeholder="Enter nickname">
+  
+        <label for="description">Description</label>
+        <textarea id="description" name="description" rows="4"></textarea>
+  
+        <div class="overlay-buttons">
+          <button type="button" onclick="closeOverlay()">Close</button>
+          <button type="submit">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
 </html>
